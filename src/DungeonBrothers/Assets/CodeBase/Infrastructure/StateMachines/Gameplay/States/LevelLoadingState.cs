@@ -27,8 +27,7 @@ namespace CodeBase.Infrastructure.StateMachines.Gameplay.States
         
         public LevelLoadingState(ILevelSpawner levelSpawner, 
             ITurnQueue turnQueue, 
-            IGameplayStateMachine
-                gameplayStateMachine, 
+            IGameplayStateMachine gameplayStateMachine, 
             IInputService inputService,
             ITileVisualizationActiveCharacter tileVisualizationActiveCharacter,
             IPathFinderVisualization pathFinderVisualization,
