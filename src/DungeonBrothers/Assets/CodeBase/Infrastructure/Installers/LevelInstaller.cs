@@ -7,7 +7,6 @@ using CodeBase.Gameplay.Services.Raycast;
 using CodeBase.Gameplay.Services.TurnQueue;
 using CodeBase.Gameplay.Spawner.CharacterSpawner;
 using CodeBase.Gameplay.Tiles;
-using CodeBase.Gameplay.Tiles.Visualisation;
 using CodeBase.Gameplay.Tiles.Visualisation.ActiveCharacter;
 using CodeBase.Gameplay.Tiles.Visualisation.Path;
 using CodeBase.Gameplay.Tiles.Visualisation.PathFinder;
@@ -22,7 +21,6 @@ using CodeBase.Infrastructure.Services.Providers.LevelSpawner;
 using CodeBase.Infrastructure.StateMachines.Gameplay;
 using CodeBase.Infrastructure.StateMachines.Gameplay.FSM;
 using CodeBase.Infrastructure.StateMachines.Gameplay.States;
-using UnityEngine;
 using VContainer;
 using VContainer.Unity;
 

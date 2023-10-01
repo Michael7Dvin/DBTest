@@ -6,10 +6,8 @@ using CodeBase.Infrastructure.Services.Providers.CameraProvider;
 using CodeBase.Infrastructure.Services.Providers.CharactersProvider;
 using CodeBase.Infrastructure.Services.SceneLoader;
 using CodeBase.Infrastructure.Services.StaticDataProvider;
-using CodeBase.Infrastructure.StateMachines.App;
 using CodeBase.Infrastructure.StateMachines.App.FSM;
 using CodeBase.Infrastructure.StateMachines.App.States;
-using CodeBase.Infrastructure.StateMachines.Gameplay.States;
 using CodeBase.UI.Services.UIProvider;
 using UnityEngine;
 using VContainer;
@@ -30,7 +28,6 @@ namespace CodeBase.Infrastructure.Installers
 
         private void RegisterStateMachine(IContainerBuilder builder)
         {
-            builder.Register<AppBootstrapper>(Lifetime.Singleton).AsImplementedInterfaces();
             builder.Register<IAppStateMachine, AppStateMachine>(Lifetime.Singleton);
             
             builder.Register<InitializationState>(Lifetime.Singleton);

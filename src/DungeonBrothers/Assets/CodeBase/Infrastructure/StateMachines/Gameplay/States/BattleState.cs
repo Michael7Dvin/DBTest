@@ -2,8 +2,6 @@
 using CodeBase.Gameplay.Services.Map;
 using CodeBase.Gameplay.Services.Move;
 using CodeBase.Gameplay.Services.TurnQueue;
-using CodeBase.Gameplay.Tiles;
-using UnityEngine;
 
 namespace CodeBase.Infrastructure.StateMachines.Gameplay.States
 {

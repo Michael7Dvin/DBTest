@@ -1,5 +1,7 @@
 ﻿using CodeBase.Common.FSM.States;
 using CodeBase.Infrastructure.Services.SceneLoader;
+using Cysharp.Threading.Tasks;
+using UnityEngine.SceneManagement;
 
 namespace CodeBase.Infrastructure.StateMachines.App.States
 {
@@ -12,8 +14,11 @@ namespace CodeBase.Infrastructure.StateMachines.App.States
             _sceneLoader = sceneLoader;
         }
 
-        public void Enter() => 
+        public async void Enter()
+        {
+            await UniTask.Delay(2000);
             _sceneLoader.Load(SceneType.Level);
+        }
 
         public void Exit()
         {
